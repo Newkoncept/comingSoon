@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    display: table;
+    transition: .5s;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    color:#fff;
+    text-align:center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.overlay h1{
+    font-size: 50px;
+    line-height: 50px;
+    text-shadow: 0px 2px 4px #000;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.overlay p {
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(218, 210, 210);
+    padding-bottom: 15px;
+}
+
+.overlay input, .overlay button {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.overlay input {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.overlay input::placeholder {
+    font-size: 16px;
+}
+
+.overlay button {
+    background: #21704f;
+    color:#fff;
+    font-size: 16px;
+   transition: .3s;
+   margin-bottom: 30px;
+}
+
+.overlay button:hover {
+    background: #113325;
+    border: 1px solid #19573d;
+   transition: .4s;
+}
+
+.social-icons {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    padding:15px;
+    text-align: center;
+}
+
+.social-icons:hover {
+    background:  #21704f;
+}
+
+@media only screen and (min-width: 762px){
+    .overlay h1{
+        font-size: 70px;
+        line-height: 80px;
+    }
+    
+    .overlay p {
+        font-size: 20px;
+    }
+
+    .overlay input, .overlay button {
+        display: inline-block;
+    }
+    
+    .overlay input {
+        width: 50%;
+        margin-right: 10px;
+    }
+    .overlay button {
+        font-size: 18px;
+    }
+}
